@@ -12,3 +12,8 @@ Output of  E3_screen_gen_fasta.py
 - fasta_file_name.fasta which is formated in the following way:
    - >E3_name_protein_name
    - E3_sequence:protein_sequence
+
+Workflow:
+- use E3_ligase_screen to generate fasta file
+- after fasta_file is generated: use pipeline_colabfold_batch to generate MSA files and AF models
+- after AF models are generated: use PPIScreenML to determine interaction
